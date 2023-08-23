@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/khabarshala-NewsApp/static/css/main.abd64e84.css",
+    "main.js": "/khabarshala-NewsApp/static/js/main.c3e37471.js",
+    "static/js/787.4c026eef.chunk.js": "/khabarshala-NewsApp/static/js/787.4c026eef.chunk.js",
+    "index.html": "/khabarshala-NewsApp/index.html",
+    "main.abd64e84.css.map": "/khabarshala-NewsApp/static/css/main.abd64e84.css.map",
+    "main.c3e37471.js.map": "/khabarshala-NewsApp/static/js/main.c3e37471.js.map",
+    "787.4c026eef.chunk.js.map": "/khabarshala-NewsApp/static/js/787.4c026eef.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.abd64e84.css",
+    "static/js/main.c3e37471.js"
+  ]
+}
