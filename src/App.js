@@ -2,7 +2,7 @@ import './App.css';
 import React, { Component } from 'react'
 import NavBar from './components/navbar';
 import News from './components/News';
-import { BrowserRouter, Routes, Route } from 'react-router-dom'; // Update import statements
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Update import statements
 import LoadingBar from 'react-top-loading-bar'
 
 export default class App extends Component {
@@ -16,13 +16,13 @@ export default class App extends Component {
   render() {
    return (
     <div>
-      <BrowserRouter> {/* Use BrowserRouter */}
+      <Router> {/* Use BrowserRouter */}
         <NavBar/>
         <LoadingBar
         color='#f11946'
         progress={this.state.progress}/>
         <Routes>
-          <Route exact path="/" element={<News setProgress={this.setProgress} key="general" pageSize={this.pageSize} country="in" category="general" />}/>
+          <Route exact path="/khabarshala-NewsApp" element={<News setProgress={this.setProgress} key="general" pageSize={this.pageSize} country="in" category="general" />}/>
           <Route exact path="/general" element={<News setProgress={this.setProgress} key="general" pageSize={this.pageSize} country="in" category="general" />}/>
           <Route exact path="/business" element={<News setProgress={this.setProgress} key="business" pageSize={this.pageSize} country="in" category="business" />}/>
           <Route exact path="/entertainment"element={<News setProgress={this.setProgress} key="entertainment"pageSize={6} country="in"category="entertainment"/>} />
@@ -31,7 +31,7 @@ export default class App extends Component {
           <Route exact path="/sports" element={<News setProgress={this.setProgress} key="sports" pageSize={this.pageSize} country="in" category="sports" />} />
           <Route exact path="/technology"element={<News setProgress={this.setProgress} key="technology"pageSize={this.pageSize}country="in"category="technology"/>}/>
         </Routes>
-      </BrowserRouter>
+      </Router>
     </div>
     )
   }
